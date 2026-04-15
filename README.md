@@ -2,6 +2,10 @@
 
 Workarounds for enabling HDR on KDE Plasma Wayland with NVIDIA laptop (eDP) panels, and fixing game crashes caused by invalid HDR metadata.
 
+## Disclaimer
+
+**Use these scripts at your own risk.** The KWin binary patch modifies a system library (`/usr/lib/libkwin.so`) and makes your compositor non-spec-compliant. Always back up your system before applying. A backup of the original `libkwin.so` is created automatically by the patch script, but you should also have system snapshots (e.g. btrfs/snapper, timeshift) in case something goes wrong. These are unofficial workarounds, not supported by KDE, NVIDIA, or Valve.
+
 ## The Problems
 
 ### 1. KDE reports "HDR: incapable" on NVIDIA laptops
@@ -61,6 +65,7 @@ These workarounds are temporary. The proper fixes belong upstream:
 |-----------|---------|
 | KDE Plasma / KWin | 6.6.4 |
 | NVIDIA Driver | 595.58.03 (Open Kernel Module) |
+| CPU | Intel Core Ultra 9 275HX |
 | GPU | NVIDIA GeForce RTX 5080 Laptop GPU |
 | Laptop | Lenovo Legion Pro 7 16IAX10H |
 | Panel | Samsung ATNA60HU01-0, 2560x1600@240Hz, 1107 nits peak |
