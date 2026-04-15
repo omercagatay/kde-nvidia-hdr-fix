@@ -58,7 +58,7 @@ sudo ./patch-kwin-hdr.sh
 
 These workarounds are temporary. The proper fixes belong upstream:
 
-- **Proton** (sanitize HDR metadata in Wine Wayland driver): [ValveSoftware/Proton#9672](https://github.com/ValveSoftware/Proton/issues/9672)
+- **Wine** (sanitize HDR luminance in `winewayland.drv`): To be filed on [bugs.winehq.org](https://bugs.winehq.org/)
 - **KDE/KWin** (consider clamping instead of disconnecting): [bugs.kde.org #519000](https://bugs.kde.org/show_bug.cgi?id=519000)
 
 ## Tested On
