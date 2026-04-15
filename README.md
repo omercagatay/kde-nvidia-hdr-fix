@@ -24,6 +24,8 @@ Games running through Proton send HDR mastering display metadata with invalid lu
 
 **Fix:** Binary patch KWin to skip the validation. See [patch-kwin-hdr.sh](patch-kwin-hdr.sh).
 
+> **Note:** This only affects Proton builds that include Wine's native Wayland driver (`winewayland.drv`), such as proton-cachyos and GE-Proton. Valve's official Proton Experimental/Hotfix does not include the Wayland driver and uses XWayland instead, so it is not affected by this specific bug.
+
 ## Files
 
 | File | Description |
@@ -69,7 +71,7 @@ These workarounds are temporary. The proper fixes belong upstream:
 | GPU | NVIDIA GeForce RTX 5080 Laptop GPU |
 | Laptop | Lenovo Legion Pro 7 16IAX10H |
 | Panel | Samsung ATNA60HU01-0, 2560x1600@240Hz, 1107 nits peak |
-| Proton | proton-cachyos-10.0-20260408-slr |
+| Proton | proton-cachyos-10.0-20260408-slr (also affects GE-Proton) |
 | Game | Crimson Desert (AppID 3321460) |
 | Distro | CachyOS (Arch-based), kernel 7.0.0 |
 
