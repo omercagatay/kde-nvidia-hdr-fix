@@ -62,6 +62,7 @@ These workarounds are temporary. The proper fixes belong upstream:
 | KDE Plasma / KWin | 6.6.4 |
 | NVIDIA Driver | 595.58.03 (Open Kernel Module) |
 | GPU | NVIDIA GeForce RTX 5080 Laptop GPU |
+| Laptop | Lenovo Legion Pro 7 16IAX10H |
 | Panel | Samsung ATNA60HU01-0, 2560x1600@240Hz, 1107 nits peak |
 | Proton | proton-cachyos-10.0-20260408-slr |
 | Game | Crimson Desert (AppID 3321460) |
